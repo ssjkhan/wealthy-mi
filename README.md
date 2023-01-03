@@ -1,2 +1,1 @@
 # wealthy-mi
-test
