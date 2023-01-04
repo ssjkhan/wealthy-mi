@@ -9,6 +9,7 @@ function App() {
     <p>App</p>
       <Routes>
         <Route path="/test/auth" element={<Auth />} />
+
       </Routes>
     </div>
   );
