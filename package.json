@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "(cd client && npm i) && (cd server && npm i)",
     "build": "cd client && npm run build",
-    "start": "npm run build && cd server && nodemon ./bin/www"
+    "start": "npm run build && cd server && npm start"
   },
   "engines": {
     "node": "19.x",

@@ -6,8 +6,9 @@ import { useSelector } from "react-redux";
 function App() {
   return (
     <div className="App">
+    <p>App</p>
       <Routes>
-        <Route path="/auth" element={<Auth />} />
+        <Route path="/test/auth" element={<Auth />} />
       </Routes>
     </div>
   );
