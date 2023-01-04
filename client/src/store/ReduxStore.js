@@ -35,7 +35,7 @@ function loadFromLocalStorage() {
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const persistedState = loadFromLocalStorage();
 
-// function to create store that passes in our reducers and include thunk middleware
+// function to create store that passes in our redueers and include thunk middleware
 const store = createStore(
   reducers,
   persistedState,
