@@ -2,10 +2,20 @@ import { useState } from "react";
 import { Collapse } from "react-bootstrap";
 import PageHeader from "../../components/page-content/PageHeader";
 import PageContent from "../../components/page-content/PageContent";
+import { useGetCategoriesQuery } from "../api/categorySlice";
 
 function AddCategory() {
   const [formData, setFormData] = useState([]);
   const [open, setOpen] = useState(false);
+  const userId = localStorage.getItem("user");
+
+  const {
+    data: categories,
+    isLoading, // optional conditional rendering if data is loading
+    isSuccess, // use for conditional rendering if data retrieved successfully
+    isError, //use for conditional rendering when error occurs
+    error, // use to render error
+  } = useGetCategoriesQuery(userId);
 
   function handleSubmit() {}
   const addCategoryBtn = (
@@ -26,9 +36,7 @@ function AddCategory() {
           <h1 className="h3 mb-0 text-gray-800">
             {open ? "Add an Expense Category" : ""}
           </h1>
-          <div className="">
-            {addCategoryBtn}
-          </div>
+          <div className="">{addCategoryBtn}</div>
         </div>
         <Collapse in={open}>
           <form onClick={handleSubmit}>
@@ -49,6 +57,14 @@ function AddCategory() {
             </div>
           </form>
         </Collapse>
+        <div>
+          <h3>Your Categories</h3>
+          <ul>
+            {categories.map((c) => (
+              <li>{c}</li>
+            ))}
+          </ul>
+        </div>
       </PageContent>
     </>
   );

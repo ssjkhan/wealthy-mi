@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-// https://blog.openreplay.com/fetching-data-in-redux-using-rtk-query/
 const userId = localStorage.getItem("user");
 
 export const categorySlice = createApi({

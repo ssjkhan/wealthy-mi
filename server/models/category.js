@@ -8,10 +8,10 @@ const CategorySchema = new Schema({
 });
 
 // format category name: "caTegory" => "Category"
-CategorySchema.pre("save", function (next) {
-  this.name =
-    this.name.trim()[0].toUpperCase() + this.name.slice(1).toLowerCase();
-  next();
-});
+// CategorySchema.pre("save", function (next) {
+//   this.name =
+//     this.name.trim()[0].toUpperCase() + this.name.slice(1).toLowerCase();
+//   next();
+// });
 
 module.exports = mongoose.model("Category", CategorySchema);

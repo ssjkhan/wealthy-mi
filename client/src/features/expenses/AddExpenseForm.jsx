@@ -2,6 +2,7 @@ import { useCreateExpenseMutation } from "../api/expenseSlice";
 import { useState } from "react";
 import PageContent from "../../components/page-content/PageContent";
 import { Collapse } from "react-bootstrap";
+import { useGetCategoriesQuery } from "../api/categorySlice";
 
 function ExpenseForm() {
   const initialState = {
@@ -43,9 +44,7 @@ function ExpenseForm() {
         <h1 className="h3 mb-0 text-gray-800">
           {open ? "Log an Expense" : ""}
         </h1>
-        <div className="">
-          {expenseBtn}
-        </div>
+        <div className="">{expenseBtn}</div>
       </div>
       <Collapse in={open}>
         <form onSubmit={handleSubmit}>
@@ -60,6 +59,7 @@ function ExpenseForm() {
                 onChange={handleChange}
               />
               <input
+                id="categories"
                 className="form-control col"
                 placeholder="category"
                 name="category"
@@ -67,6 +67,7 @@ function ExpenseForm() {
                 value={formData.category}
                 onChange={handleChange}
               />
+              
               <input
                 className="form-control col"
                 form="form-control"
