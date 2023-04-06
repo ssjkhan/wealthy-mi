@@ -57,8 +57,7 @@ Saad Khan
 
 - [saad@ssjkhan.dev](saad@ssjkhan.dev)
 - <a target="_blank"> [GitHub](https://github.com/ssjkhan)</a>
-- <a target="_blank">
-  [LinkedIn](https://www.linkedin.com/in/saad-khan-softwaredev/)</a>
+- <a target="_blank">[LinkedIn](https://www.linkedin.com/in/saad-khan-softwaredev/)</a>
 
 Ralph Tungol
 
