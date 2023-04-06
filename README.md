@@ -48,8 +48,7 @@ Agile workflow practices.
 
 ### In Progress
 
-<a target="_blank">
-[Keep up-to-date with our project!](https://ssjkhan-dev.cloud.mattermost.com/plugins/focalboard/team/upxt4777bjnbbksgseh6rp5sqc/shared/b36soedahfffumydnaxa7f6jyxw/v3633xjehi7gqikhgu1gkkcscec?r=kcr11b9h8i4thcnx6fr8mi514gy)</a>
+<a target="_blank">[Keep up-to-date with our project!](https://ssjkhan-dev.cloud.mattermost.com/plugins/focalboard/team/upxt4777bjnbbksgseh6rp5sqc/shared/b36soedahfffumydnaxa7f6jyxw/v3633xjehi7gqikhgu1gkkcscec?r=kcr11b9h8i4thcnx6fr8mi514gy)</a>
 
 ### Contact
 
